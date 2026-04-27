@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=config.env server.js",
+    "dev": "node --watch --env-file=config.env server.js",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.0.0",
+    "mongodb": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
