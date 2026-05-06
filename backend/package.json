@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node --env-file=config.env server.js",
     "dev": "node --watch --env-file=config.env server.js",
-    "test": "jest --coverage"
+    "test": "node --experimental-vm-modules node_modules/jest-cli/bin/jest.js --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
   },
   "dependencies": {
     "cors": "^2.8.5",

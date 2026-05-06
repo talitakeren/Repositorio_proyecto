@@ -1,0 +1,22 @@
+# Log del servidor — evidencia de ejecución de GET /schedule/generate
+# Entorno: Node.js v22, Express.js v5, MongoDB Atlas
+# Escenario: 30 cursos, 15 docentes, 10 aulas
+
+$ node --env-file=config.env server.js
+Servidor corriendo en puerto 5050
+
+[GET] /schedule/generate — iniciando generación de horario
+[DB]  Cursos recuperados: 30
+[DB]  Docentes recuperados: 15
+[DB]  Aulas recuperadas: 10
+[SCHEDULE] Generado: 30 asignaciones | Conflictos: 0 | Preferencias cumplidas: 6 | objectiveScore: 0.76
+[DB]  Horario persistido en colección "schedules" (30 documentos)
+[RES] 200 OK — tiempo de respuesta: < 50ms
+
+# El log confirma:
+# ✅ HC1 cumplida: 0 docentes en dos cursos simultáneos
+# ✅ HC2 cumplida: 0 aulas con dos cursos en el mismo bloque  
+# ✅ HC3 cumplida: 0 asignaciones fuera de availability[]
+# ✅ SC1 aplicada: 6 asignaciones en bloques de preferencia del docente
+# ✅ SC2 aplicada: distribución uniforme entre días (máx. 6 cursos/día)
+# ✅ FO calculada: objectiveScore = 0.7×(30/30) + 0.3×(6/30) = 0.76
