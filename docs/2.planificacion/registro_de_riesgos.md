@@ -1,4 +1,5 @@
 Gestión de Riesgos y Oportunidades
+
 **Proyecto:** Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
 ---
