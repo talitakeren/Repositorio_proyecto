@@ -3,16 +3,18 @@
 ## Tabla de Contenido
 1. [Integrantes del equipo](#integrantes-del-equipo)
 2. [Problemática abordada](#problemática-abordada)
-3. [Modelo de Timetabling](#modelo-de-timetabling)
-4. [Justificación del PMV](#justificación-del-pmv)
+3. [Justificación del PMV](#justificación-del-pmv)
+4. [Modelo de Timetabling](#modelo-de-timetabling)
 5. [Tecnologías utilizadas](#tecnologías-utilizadas)
 6. [Arquitectura del sistema](#arquitectura-del-sistema)
-7. [Instrucciones de instalación](#instrucciones-de-instalación)
-8. [Instrucciones de build](#instrucciones-de-build)
-9. [Instrucciones de despliegue](#instrucciones-de-despliegue)
-10. [Video explicativo](#video-explicativo)
-11. [Documentación](#documentación)
-
+7. [Capturas del sistema](#capturas-del-sistema)
+8. [Video explicativo](#video-explicativo)
+9. [Gestión del proyecto (Jira)](#gestión-del-proyecto-jira)
+10. [Instrucciones de instalación](#instrucciones-de-instalación)
+11. [Instrucciones de build](#instrucciones-de-build)
+12. [Instrucciones de despliegue](#instrucciones-de-despliegue)
+13. [Documentación](#documentación)
+14. [Requisitos No Funcionales y Métricas](#requisitos-no-funcionales-y-métricas)
 ---
 
 ## Integrantes del equipo
@@ -35,6 +37,21 @@ Las universidades con currículo flexible enfrentan dificultades en la generaci�
 - Necesidad de optimización multiobjetivo
 
 Este problema es considerado un problema complejo de ingeniería (NP-hard), ya que involucra múltiples variables interdependientes y no posee una solución única o trivial.
+
+---
+
+## Justificación del PMV
+
+El desarrollo de un Producto Mínimo Viable (PMV) permitirá:
+
+- Validar una solución inicial al problema de generación de horarios
+- Reducir la complejidad mediante un enfoque incremental
+- Evaluar la viabilidad técnica del sistema
+- Obtener retroalimentación temprana de usuarios
+- Implementar funcionalidades clave como:
+  - Registro de entidades (estudiantes, docentes, cursos, aulas)
+  - Validación de restricciones duras y blandas
+  - Generación automática de horarios con función objetivo medible
 
 ---
 
@@ -147,21 +164,6 @@ objectiveScore = 0.7 × (cursosAsignados / totalCursos)
 
 ---
 
-## Justificación del PMV
-
-El desarrollo de un Producto Mínimo Viable (PMV) permitirá:
-
-- Validar una solución inicial al problema de generación de horarios
-- Reducir la complejidad mediante un enfoque incremental
-- Evaluar la viabilidad técnica del sistema
-- Obtener retroalimentación temprana de usuarios
-- Implementar funcionalidades clave como:
-  - Registro de entidades (estudiantes, docentes, cursos, aulas)
-  - Validación de restricciones duras y blandas
-  - Generación automática de horarios con función objetivo medible
-
----
-
 ## Tecnologías utilizadas
 
 El proyecto se desarrolla utilizando el stack MERN:
@@ -177,22 +179,56 @@ El proyecto se desarrolla utilizando el stack MERN:
 
 ## Arquitectura del sistema
 
-El sistema sigue una arquitectura basada en:
-
-- **SPA (Single Page Application)** para el frontend
-- **API REST** para la comunicación entre cliente y servidor
+El sistema implementa una arquitectura basada en el stack **MERN (MongoDB, Express, React, Node.js)**, combinada con el patrón **SPA (Single Page Application)** en el frontend y una **API REST** para la comunicación entre cliente y servidor.
 
 ### Capas del sistema
 
-- **Frontend:** Interfaz de usuario (UI/UX) — React.js
-- **Backend:** Lógica de negocio y algoritmo de optimización — Node.js + Express.js
-- **Base de datos:** Persistencia de información — MongoDB
+- **Frontend (React.js)**  
+  Implementado como una SPA, permite la interacción del usuario con el sistema, incluyendo la gestión de cursos y la visualización de horarios generados.
 
-### Características
+- **Backend (Node.js + Express.js)**  
+  Expone una API REST y gestiona la lógica de negocio, incluyendo el algoritmo de optimización para la generación de horarios académicos.
 
-- Separación de responsabilidades
-- Escalabilidad horizontal
-- Mantenibilidad
+- **Base de datos (MongoDB)**  
+  Responsable de la persistencia de datos, como cursos, docentes, horarios y restricciones.
+
+### Flujo de interacción
+
+Usuario → Frontend (React SPA) → API REST (Node.js/Express) → Base de datos (MongoDB)
+
+### Características de la arquitectura
+
+- **Separación de responsabilidades**: Cada capa cumple una función específica.
+- **Escalabilidad horizontal**: Permite ampliar el sistema fácilmente.
+- **Mantenibilidad**: Facilita la evolución y mejora del sistema.
+
+---
+
+## Capturas del sistema
+
+A continuación se muestran algunas vistas del sistema en funcionamiento:
+
+[Creación de docentes](https://drive.google.com/file/d/1TT5bOOA8B4vi1hdPfbJakkToT5Fv050A/view?usp=drive_link)
+
+[Lista de docentes con disponibilidad](https://drive.google.com/file/d/110XmGiZK9hy5ce0CH1epHJqXsCdrN66z/view?usp=drive_link)
+
+[Creación de cursos](https://drive.google.com/file/d/10Ka4CBzEKVrPu9HD74ybbbvbwDcM-c_T/view?usp=drive_link)
+
+[Lista de cursos](https://drive.google.com/file/d/1lW_Tq0pRWrliOYP6tAMILaatGI1Um8F_/view?usp=drive_link)
+
+---
+
+## Video explicativo
+
+🔗 [Ver video del proyecto (máx. 5 minutos)](https://drive.google.com/drive/folders/18SfcJ2oTlMpRmi4TxZT1MkCI7XLY6kbR?usp=drive_link)
+
+---
+
+## Gestión del proyecto (Jira)
+
+El seguimiento del proyecto se realiza mediante Jira:
+
+🔗 [Ver tablero Jira](https://continental-team-qdanr7dh.atlassian.net/jira/software/projects/SGOHA/summary)
 
 ---
 
@@ -256,11 +292,6 @@ http://localhost:5173   ← Frontend React
 
 ---
 
-## Video explicativo
-
-🔗 [Ver video del proyecto (máx. 5 minutos)](#)
-
----
 
 ## Documentación
 
@@ -279,7 +310,7 @@ La documentación completa del proyecto se encuentra en la carpeta `/docs`.
 
 ## Requisitos No Funcionales y Métricas
 
-Referencia completa: [`/docs/metrics/requisitos-no-funcionales-y-metricas.md`](docs/metrics/requisitos-no-funcionales-y-metricas.md)
+Referencia completa: [`/docs/metrics/requisitos-no-funcionales-y-metricas.md`](docs/4.seguimiento_control/RNF-Metricas-Validacion.md)
 
 ### Resultados de validación experimental
 
@@ -296,17 +327,17 @@ Referencia completa: [`/docs/metrics/requisitos-no-funcionales-y-metricas.md`](d
 ### Cómo reproducir la validación
 
 ```bash
-# 1. Ejecutar tests con cobertura
+1. Ejecutar tests con cobertura
 cd backend && npm test
-# Esperado: 29 passed, 100% líneas
+ -Esperado: 29 passed, 100% líneas
 
-# 2. Generar horario y verificar métricas
+2. Generar horario y verificar métricas
 curl http://localhost:5050/schedule/generate
-# Esperado: { "conflicts": 0, "objectiveScore": >= 0.70, ... }
+ -Esperado: { "conflicts": 0, "objectiveScore": >= 0.70, ... }
 
-# 3. Medir tiempo de respuesta
+3. Medir tiempo de respuesta
 curl -w "Tiempo: %{time_total}s\n" -o /dev/null -s http://localhost:5050/schedule/generate
-# Esperado: < 2.000s
+ -Esperado: < 2.000s
 ```
 
 ### Escenario de validación ejecutado
@@ -326,12 +357,6 @@ Resultado:
 > para ≤ 30 cursos; escenarios de mayor escala requerirían algoritmos genéticos o
 > programación entera mixta.
 
----
-
-## Requisitos No Funcionales y Métricas
-
-Documentación completa con resultados experimentales en:
-📄 [`docs/seguimiento/RNF-Metricas-Validacion.md`](docs/seguimiento/RNF-Metricas-Validacion.md)
 
 ### Resumen de resultados obtenidos
 
@@ -346,22 +371,22 @@ Documentación completa con resultados experimentales en:
 ### Reproducir validación experimental
 
 ```bash
-# 1. Verificar cobertura de tests
+1. Verificar cobertura de tests
 cd backend && npm test
 
-# 2. Medir tiempo del algoritmo (escenario máximo: 30 cursos)
+2. Medir tiempo del algoritmo (escenario máximo: 30 cursos)
 curl -o /dev/null -s -w "Tiempo: %{time_total}s\n" http://localhost:5050/schedule/generate
 
-# 3. Ver resultado completo con métricas
+3. Ver resultado completo con métricas
 curl http://localhost:5050/schedule/generate
-# Respuesta esperada:
-# {
-#   "schedule": [...],
-#   "totalAssigned": 30,
-#   "conflicts": 0,
-#   "preferencesMet": 6,
-#   "objectiveScore": 0.76
-# }
+Respuesta esperada:
+{
+  "schedule": [...],
+  "totalAssigned": 30,
+  "conflicts": 0,
+  "preferencesMet": 6,
+  "objectiveScore": 0.76
+ }
 ```
 
 ### Limitaciones reconocidas de la PoC
@@ -370,3 +395,6 @@ curl http://localhost:5050/schedule/generate
 - La calidad del `objectiveScore` depende de que los docentes tengan `availability[]` configurada.
 - El algoritmo (backtracking + greedy) es adecuado para ≤ 30 cursos; escala mayor requeriría algoritmo genético.
 - `preferences[]` de docentes modeladas como SC1 pero aún no validadas con usuarios reales.
+
+---
+
