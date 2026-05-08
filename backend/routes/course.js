@@ -4,12 +4,19 @@ import { ObjectId } from "mongodb";
 
 const router = express.Router();
 
+// --- OBTENER TODOS LOS CURSOS ---
 router.get("/", async (req, res) => {
-  let collection = await db.collection("courses");
-  let results = await collection.find({}).toArray();
-  res.send(results);
+  try {
+    let collection = await db.collection("courses");
+    let results = await collection.find({}).toArray();
+    res.status(200).send(results);
+  } catch (error) {
+    console.error("Error al obtener los cursos:", error);
+    res.status(500).send({ message: "Error interno del servidor", error });
+  }
 });
 
+// --- CREAR UN NUEVO CURSO ---
 router.post("/", async (req, res) => {
   try {
     let newDoc = {
@@ -23,32 +30,49 @@ router.post("/", async (req, res) => {
     let collection = await db.collection("courses");
     let result = await collection.insertOne(newDoc);
 
-    res.send(result);
+    res.status(201).send(result);
   } catch (error) {
-    res.status(500).send(error);
+    console.error("Error al crear el curso:", error);
+    res.status(500).send({ message: "Error interno del servidor", error });
   }
 });
 
+// --- ACTUALIZAR UN CURSO ---
 router.patch("/:id", async (req, res) => {
-  let query = { _id: new ObjectId(req.params.id) };
+  try {
+    let query = { _id: new ObjectId(req.params.id) };
 
-  let updates = {
-    $set: req.body,
-  };
+    // Extraemos el _id (lo ignoramos) y guardamos el resto en 'updateData'
+    // Esto evita el error de intentar sobrescribir el _id en MongoDB
+    const { _id, ...updateData } = req.body;
 
-  let collection = await db.collection("courses");
-  let result = await collection.updateOne(query, updates);
+    let updates = {
+      $set: updateData,
+    };
 
-  res.send(result);
+    let collection = await db.collection("courses");
+    let result = await collection.updateOne(query, updates);
+
+    res.status(200).send(result);
+  } catch (error) {
+    console.error("Error al actualizar:", error);
+    res.status(500).send({ message: "Error interno del servidor", error });
+  }
 });
 
+// --- ELIMINAR UN CURSO ---
 router.delete("/:id", async (req, res) => {
-  let query = { _id: new ObjectId(req.params.id) };
+  try {
+    let query = { _id: new ObjectId(req.params.id) };
 
-  let collection = await db.collection("courses");
-  let result = await collection.deleteOne(query);
+    let collection = await db.collection("courses");
+    let result = await collection.deleteOne(query);
 
-  res.send(result);
+    res.status(200).send(result);
+  } catch (error) {
+    console.error("Error al eliminar:", error);
+    res.status(500).send({ message: "Error interno del servidor", error });
+  }
 });
 
 export default router;
