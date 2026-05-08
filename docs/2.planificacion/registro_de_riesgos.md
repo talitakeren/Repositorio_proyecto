@@ -1,5 +1,3 @@
----
-
 ## Análisis de Riesgos y Oportunidades
 
 ### 1. Relación de Riesgos con las Restricciones del Problema (CSP)
