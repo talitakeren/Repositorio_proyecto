@@ -2,6 +2,19 @@
 
 ---
 
+## Gráfico de trabajo hecho (Burnup) 
+<img width="1213" height="500" alt="Gráfico_de_trabajo_hecho_burnup" src="https://github.com/user-attachments/assets/65c1ff16-65bb-4194-bf29-c2c8dc51aba3" />
+
+---
+## Gráfico de trabajo pendiente (Burndown) 
+<img width="1213" height="500" alt="burndown" src="https://github.com/user-attachments/assets/2fa142f5-e739-4d3e-8aa3-97b4f100a082" />
+
+---
+## Gráfico de velocidad
+<img width="1213" height="500" alt="velocidad" src="https://github.com/user-attachments/assets/1e53e8db-bd35-4931-a419-e87bd3f69b87" />
+
+---
+
 ## 1. Evolución del Proyecto
 
 Los gráficos reflejan un sprint con ejecución concentrada en su tramo final. El scope se fijó en ~90 puntos desde el 10 de abril, pero el progreso efectivo no inició hasta el 27 de abril.
