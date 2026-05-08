@@ -181,13 +181,14 @@ No existen aulas registradas:
 
 # Coherencia Regla-Código-Test
 
-| Regla                         | Implementación | Test  |
-|-------------------------------|----------------|-------|
-| HC1 docente no duplicado      | scheduler.js   | TC-01 |
-| HC2 aula no duplicada         | scheduler.js   | TC-02 |
-| HC3 capacidad aula            | scheduler.js   | TC-03 |
-| HC5 availability docente      | scheduler.js   | TC-04 |
-| SC1 preferencias docentes     | scheduler.js   | TC-05 |
+| Regla                         | Implementación | Test             |
+|-------------------------------|----------------|------------------|
+| HC1 docente no duplicado      | scheduler.js   | schedule.test.js |
+| HC2 aula no duplicada         | scheduler.js   | schedule.test.js |
+| HC3 capacidad aula            | scheduler.js   | schedule.test.js |
+| HC5 availability docente      | scheduler.js   | teacher.test.js  |
+| SC1 preferencias docentes     | scheduler.js   | schedule.test.js |
+| Validación de cursos          | courses.js     | course.test.js   |
 
 ---
 
