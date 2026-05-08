@@ -31,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/students", element: <StudentList /> },
       { path: "/schedule", element: <ScheduleGenerator /> },
       { path: "/student-schedule", element: <StudentSchedule /> },
+      { path: "/edit-teacher/:id", element: <TeacherForm /> },
     ],
   },
 ]);

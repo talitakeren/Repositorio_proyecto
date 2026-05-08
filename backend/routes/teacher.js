@@ -5,71 +5,83 @@ import { ObjectId } from "mongodb";
 const router = express.Router();
 
 /**
- * GET /teachers
+ * GET /teacher
  * Retorna todos los docentes registrados.
  */
 router.get("/", async (req, res) => {
-  let data = await db.collection("teachers").find({}).toArray();
-  res.send(data);
+  try {
+    let data = await db.collection("teachers").find({}).toArray();
+    res.send(data);
+  } catch (error) {
+    res.status(500).send({ error: "Error al obtener docentes", detail: error.message });
+  }
 });
 
 /**
- * POST /teachers
- * Crea un nuevo docente.
- *
- * Body esperado:
- * {
- *   name:         string   — nombre completo del docente
- *   email:        string   — correo institucional
- *   availability: string[] — bloques disponibles, formato "Día-HH-HH"
- *                            Ej: ["Lunes-8-10", "Martes-14-16"]
- *   preferences:  string[] — bloques preferidos (restricción blanda SC1)
- *                            Ej: ["Lunes-8-10", "Miércoles-10-12"]
- * }
- *
- * Nota: availability define CUÁNDO puede dictar (restricción dura HC3).
- *       preferences define cuándo PREFIERE dictar (restricción blanda SC1),
- *       debe ser un subconjunto de availability.
+ * POST /teacher
+ * Crea un nuevo docente (con validación de email único)
  */
 router.post("/", async (req, res) => {
   try {
+    // 🔥 VALIDACIÓN EMAIL ÚNICO
+    const existing = await db.collection("teachers").findOne({
+      email: req.body.email
+    });
+
+    if (existing) {
+      return res.status(400).send({ error: "El correo ya está registrado" });
+    }
+
     let teacher = {
-      name:         req.body.name,
-      email:        req.body.email,
-      availability: req.body.availability || [],  // HC3 — restricción dura
-      preferences:  req.body.preferences  || [],  // SC1 — restricción blanda
+      name: req.body.name,
+      email: req.body.email,
+      availability: req.body.availability || [],
+      preferences: req.body.preferences || [],
     };
 
     let result = await db.collection("teachers").insertOne(teacher);
     res.send(result);
+
   } catch (error) {
     res.status(500).send({ error: "Error al registrar docente", detail: error.message });
   }
 });
 
 /**
- * PATCH /teachers/:id
- * Actualiza parcialmente un docente (disponibilidad y/o preferencias).
+ * PATCH /teacher/:id
+ * Actualiza docente (con validación email único si cambia)
  */
 router.patch("/:id", async (req, res) => {
   try {
-    let query   = { _id: new ObjectId(req.params.id) };
+    // 🔥 VALIDACIÓN EMAIL ÚNICO EN UPDATE
+    if (req.body.email) {
+      const existing = await db.collection("teachers").findOne({
+        email: req.body.email,
+        _id: { $ne: new ObjectId(req.params.id) }
+      });
+
+      if (existing) {
+        return res.status(400).send({ error: "El correo ya está en uso" });
+      }
+    }
+
+    let query = { _id: new ObjectId(req.params.id) };
     let updates = { $set: req.body };
 
     let result = await db.collection("teachers").updateOne(query, updates);
     res.send(result);
+
   } catch (error) {
     res.status(500).send({ error: "Error al actualizar docente", detail: error.message });
   }
 });
 
 /**
- * DELETE /teachers/:id
- * Elimina un docente por ID.
+ * DELETE /teacher/:id
  */
 router.delete("/:id", async (req, res) => {
   try {
-    let query  = { _id: new ObjectId(req.params.id) };
+    let query = { _id: new ObjectId(req.params.id) };
     let result = await db.collection("teachers").deleteOne(query);
     res.send(result);
   } catch (error) {

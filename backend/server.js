@@ -20,6 +20,7 @@ app.use("/classroom", classroomRoutes);
 app.use("/student", studentRoutes);
 app.use("/enrollment", enrollmentRoutes);
 app.use("/schedule", scheduleRoutes);
+app.use("/api/teachers", teacherRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
