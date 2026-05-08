@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777269211951" clover="3.2.0">
-  <project timestamp="1777269211952" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1" elements="17" coveredelements="17" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="scheduler.js" path="D:\PROYECTOS_MERN\proyecto_1 - copia\backend\services\scheduler.js">
-      <metrics statements="11" coveredstatements="11" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <line num="4" count="5" type="cond" truecount="5" falsecount="0"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="15" count="8" type="stmt"/>
-      <line num="23" count="8" type="stmt"/>
-      <line num="26" count="4" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+<coverage generated="1778107159885" clover="3.2.0">
+  <project timestamp="1778107159885" name="All files">
+    <metrics statements="43" coveredstatements="43" conditionals="23" coveredconditionals="22" methods="2" coveredmethods="2" elements="68" coveredelements="67" complexity="0" loc="43" ncloc="43" packages="1" files="1" classes="1"/>
+    <file name="scheduler.js" path="D:\PROYECTOS_MERN\Repositorio_proyecto\backend\services\scheduler.js">
+      <metrics statements="43" coveredstatements="43" conditionals="23" coveredconditionals="22" methods="2" coveredmethods="2"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="45" count="15" type="cond" truecount="5" falsecount="0"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="57" count="14" type="stmt"/>
+      <line num="58" count="14" type="stmt"/>
+      <line num="59" count="14" type="stmt"/>
+      <line num="61" count="14" type="stmt"/>
+      <line num="62" count="14" type="stmt"/>
+      <line num="63" count="14" type="stmt"/>
+      <line num="66" count="14" type="stmt"/>
+      <line num="67" count="63" type="stmt"/>
+      <line num="70" count="63" type="stmt"/>
+      <line num="71" count="415" type="stmt"/>
+      <line num="74" count="63" type="stmt"/>
+      <line num="75" count="63" type="stmt"/>
+      <line num="76" count="85" type="stmt"/>
+      <line num="77" count="163" type="stmt"/>
+      <line num="79" count="163" type="stmt"/>
+      <line num="82" count="260" type="cond" truecount="2" falsecount="0"/>
+      <line num="83" count="260" type="cond" truecount="2" falsecount="0"/>
+      <line num="86" count="146" type="stmt"/>
+      <line num="87" count="146" type="cond" truecount="2" falsecount="0"/>
+      <line num="89" count="61" type="stmt"/>
+      <line num="91" count="141" type="stmt"/>
+      <line num="92" count="141" type="cond" truecount="2" falsecount="0"/>
+      <line num="95" count="60" type="stmt"/>
+      <line num="96" count="60" type="stmt"/>
+      <line num="97" count="60" type="stmt"/>
+      <line num="101" count="60" type="cond" truecount="2" falsecount="0"/>
+      <line num="102" count="60" type="cond" truecount="2" falsecount="0"/>
+      <line num="104" count="60" type="stmt"/>
+      <line num="114" count="60" type="stmt"/>
+      <line num="115" count="60" type="stmt"/>
+      <line num="121" count="63" type="cond" truecount="2" falsecount="0"/>
+      <line num="122" count="3" type="stmt"/>
+      <line num="127" count="14" type="stmt"/>
+      <line num="128" count="14" type="stmt"/>
+      <line num="129" count="14" type="stmt"/>
+      <line num="131" count="14" type="stmt"/>
+      <line num="132" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="133" count="14" type="stmt"/>
+      <line num="137" count="14" type="stmt"/>
     </file>
   </project>
 </coverage>

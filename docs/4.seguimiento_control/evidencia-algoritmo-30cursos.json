@@ -1,0 +1,285 @@
+{
+  "_evidencia": "Resultado real del algoritmo de optimización — escenario máximo",
+  "_entorno": "Node.js v22, scheduler.js backtracking con restricciones HC1/HC2/HC3 + SC1/SC2",
+  "_tiempoEjecucionMs": 0.71,
+  "totalCursos": 30,
+  "totalDocentes": 15,
+  "totalAulas": 10,
+  "totalAssigned": 30,
+  "conflicts": 0,
+  "unassigned": [],
+  "preferencesMet": 6,
+  "objectiveScore": 0.76,
+  "schedule": [
+    {
+      "course": "Curso 1",
+      "courseCode": "C01",
+      "teacher": "Docente 1",
+      "classroom": "A1",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 2",
+      "courseCode": "C02",
+      "teacher": "Docente 1",
+      "classroom": "A1",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 3",
+      "courseCode": "C03",
+      "teacher": "Docente 1",
+      "classroom": "A1",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 4",
+      "courseCode": "C04",
+      "teacher": "Docente 1",
+      "classroom": "A1",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 5",
+      "courseCode": "C05",
+      "teacher": "Docente 1",
+      "classroom": "A1",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 6",
+      "courseCode": "C06",
+      "teacher": "Docente 2",
+      "classroom": "A2",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 7",
+      "courseCode": "C07",
+      "teacher": "Docente 2",
+      "classroom": "A2",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 8",
+      "courseCode": "C08",
+      "teacher": "Docente 2",
+      "classroom": "A2",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 9",
+      "courseCode": "C09",
+      "teacher": "Docente 2",
+      "classroom": "A2",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 10",
+      "courseCode": "C10",
+      "teacher": "Docente 2",
+      "classroom": "A2",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 11",
+      "courseCode": "C11",
+      "teacher": "Docente 3",
+      "classroom": "A3",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 12",
+      "courseCode": "C12",
+      "teacher": "Docente 3",
+      "classroom": "A3",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 13",
+      "courseCode": "C13",
+      "teacher": "Docente 3",
+      "classroom": "A3",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 14",
+      "courseCode": "C14",
+      "teacher": "Docente 3",
+      "classroom": "A3",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 15",
+      "courseCode": "C15",
+      "teacher": "Docente 3",
+      "classroom": "A3",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 16",
+      "courseCode": "C16",
+      "teacher": "Docente 4",
+      "classroom": "A4",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 17",
+      "courseCode": "C17",
+      "teacher": "Docente 4",
+      "classroom": "A4",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 18",
+      "courseCode": "C18",
+      "teacher": "Docente 4",
+      "classroom": "A4",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 19",
+      "courseCode": "C19",
+      "teacher": "Docente 4",
+      "classroom": "A4",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 20",
+      "courseCode": "C20",
+      "teacher": "Docente 4",
+      "classroom": "A4",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 21",
+      "courseCode": "C21",
+      "teacher": "Docente 5",
+      "classroom": "A5",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 22",
+      "courseCode": "C22",
+      "teacher": "Docente 5",
+      "classroom": "A5",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 23",
+      "courseCode": "C23",
+      "teacher": "Docente 5",
+      "classroom": "A5",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 24",
+      "courseCode": "C24",
+      "teacher": "Docente 5",
+      "classroom": "A5",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 25",
+      "courseCode": "C25",
+      "teacher": "Docente 5",
+      "classroom": "A5",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 26",
+      "courseCode": "C26",
+      "teacher": "Docente 6",
+      "classroom": "A6",
+      "day": "Lunes",
+      "block": "8-10",
+      "meetsPreference": true
+    },
+    {
+      "course": "Curso 27",
+      "courseCode": "C27",
+      "teacher": "Docente 6",
+      "classroom": "A6",
+      "day": "Martes",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 28",
+      "courseCode": "C28",
+      "teacher": "Docente 6",
+      "classroom": "A6",
+      "day": "Miércoles",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 29",
+      "courseCode": "C29",
+      "teacher": "Docente 6",
+      "classroom": "A6",
+      "day": "Jueves",
+      "block": "8-10",
+      "meetsPreference": false
+    },
+    {
+      "course": "Curso 30",
+      "courseCode": "C30",
+      "teacher": "Docente 6",
+      "classroom": "A6",
+      "day": "Viernes",
+      "block": "8-10",
+      "meetsPreference": false
+    }
+  ]
+}
