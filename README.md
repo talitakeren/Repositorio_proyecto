@@ -174,20 +174,16 @@ El sistema estará disponible en:
 | API Backend | http://localhost:5050 |
 | Frontend React | http://localhost:5173 |
 
-### b. Enlace a video explicativo
-
-🔗 [Ver video del proyecto (máx. 5 minutos)](https://drive.google.com/drive/folders/18SfcJ2oTlMpRmi4TxZT1MkCI7XLY6kbR?usp=drive_link)
-
 ### c. Enlaces a la documentación
 
-La documentación completa está organizada en la carpeta [`/docs`](./docs/) según las áreas de conocimiento del PMBOK:
+La documentación del proyecto se encuentra organizada en la carpeta [`/docs`](./docs/) siguiendo el ciclo de vida del proyecto basado en las áreas de gestión propuestas por PMBOK.
 
-| Área PMBOK | Carpeta | Contenido |
-|------------|---------|-----------|
-| Inicio | [`docs/inicio/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/1.inicio) | Acta de constitución, stakeholders |
-| Planificación | [`docs/planificacion/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/2.planificacion) | Backlog, cronograma, riesgos |
-| Ejecución | [`docs/ejecucion/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/3.ejecucion) | Sprints, evidencias de desarrollo |
-| Seguimiento y Control | [`docs/seguimiento_control/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/4.seguimiento_control) | Métricas, RNF, pruebas |
-| Cierre | [`docs/cierre/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/5.cierre) | Lecciones aprendidas, entregable final |
-| Otros | [`docs/otros/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/6.otros) | Green software, nuevos requerimientos |
+| Área | Carpeta | Contenido principal |
+|--------|---------|---------|
+| Inicio | [`docs/1.inicio/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/1.inicio) | Definición del problema, visión del proyecto, acta de constitución (Project Charter), identificación del equipo, enfoque de desarrollo, supuestos, restricciones y requerimientos iniciales. |
+| Planificación | [`docs/2.planificacion/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/2.planificacion) | Backlog del producto y sprint, cronograma de hitos, presupuesto y gestión de riesgos del proyecto. |
+| Ejecución | [`docs/3.ejecucion/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/3.ejecucion) | Documentación técnica del sistema, especificación funcional, casos verificables, evidencias de ejecución, sostenibilidad (Green Software) y evolución de requerimientos. |
+| Seguimiento y Control | [`docs/4.seguimiento_control/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/4.seguimiento_control) | Métricas ágiles, validación de requisitos no funcionales, análisis del problema, resultados de pruebas y evidencias de validación. |
+| Cierre | [`docs/5.cierre/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/5.cierre) | Documentos de cierre del proyecto, lecciones aprendidas, evaluación de resultados, cumplimiento de objetivos y entregables finales. |
+| Otros | [`docs/6.otros/`](https://github.com/talitakeren/Repositorio_proyecto/tree/main/docs/6.otros) | Documentación complementaria del proyecto: AGENTS.md y SPEC.md, utilizados como artefactos de apoyo para la definición técnica y organización del desarrollo. |
 
