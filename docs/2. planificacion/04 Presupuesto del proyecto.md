@@ -115,4 +115,8 @@ El modelo económico es viable dentro de un entorno académico, con uso intensiv
 
 El costo total del proyecto asciende a:
 
+<<<<<<< HEAD:docs/2. planificacion/04 Presupuesto del proyecto.md
 **S/ 21,830**
+=======
+**S/ 21,830**
+>>>>>>> origin/develop:docs/2. planificacion/05 Presupuesto del proyecto.md
