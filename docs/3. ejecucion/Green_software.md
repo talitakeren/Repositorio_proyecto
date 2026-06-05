@@ -145,8 +145,6 @@ Se reinició el servidor y se realizaron las mismas acciones de navegación para
 | **CO2 Promedio por solicitud** | 0.000981925 g | 0.000773649 g | **−21.2%** | Solicitudes individuales menos contaminantes gracias a compresión y proyección. |
 | **Bundle JS inicial (Frontend)** | Carga total sincrónica | Code splitting activo | **~30–40% reducción TBT** | Menor CPU en el dispositivo cliente; páginas pesadas solo se descargan al visitarlas. |
 
-> **Nota sobre `GET /latest`:** Mantiene 154,620 B en ambos escenarios por sus consultas anidadas con colecciones grandes. Es la oportunidad de optimización más significativa para una siguiente iteración (proyección profunda y paginación).
-
 ---
 ## 8. Beneficios
 
