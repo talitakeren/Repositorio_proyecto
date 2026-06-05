@@ -55,8 +55,7 @@ El middleware registra método HTTP, ruta, código de estado, tiempo de respuest
 
 ---
 
-## 4. Métricas Iniciales ("El Antes") — Estado Base
-
+## 4. Métricas Iniciales (Antes)
 Se obtuvieron estas métricas navegando la aplicación en su estado original: carga del dashboard de administrador, listado de cursos y una generación de horario.
 
 ### Indicadores Generales (Antes)
