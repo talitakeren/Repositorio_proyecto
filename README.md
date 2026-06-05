@@ -158,7 +158,7 @@ npm run build
 **Backend:**
 ```bash
 cd backend
-node --env-file=config.env server
+npm run dev
 ```
 
 **Frontend:**
