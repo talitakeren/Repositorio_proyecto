@@ -4,7 +4,7 @@ Este documento detalla el análisis de impacto ambiental de la aplicación **SGO
 
 ---
 
-## 1. Sensibilización: Impactos Ambientales en Aplicaciones Web
+## 1. Impactos Ambientales en Aplicaciones Web
 
 El desarrollo y uso de aplicaciones MERN genera costos ambientales invisibles. Los principales impactos son:
 
@@ -12,7 +12,7 @@ El desarrollo y uso de aplicaciones MERN genera costos ambientales invisibles. L
    Los servidores de MongoDB Atlas y la API Express operan 24/7, consumiendo energía constantemente para procesamiento y refrigeración, especialmente durante la generación de horarios con múltiples colecciones.
 
 2. **Consumo Eléctrico de Dispositivos Cliente:**
-   Un frontend ineficiente —con carga excesiva de módulos o sin paginación— obliga a la CPU y GPU del dispositivo del usuario a trabajar a alta frecuencia, agotando la batería e incrementando la demanda eléctrica local.
+   Un frontend ineficiente (con carga excesiva de módulos o sin paginación) obliga a la CPU y GPU del dispositivo del usuario a trabajar a alta frecuencia, agotando la batería e incrementando la demanda eléctrica local.
 
 3. **Huella de Carbono del Tránsito de Red:**
    Cada kilobyte transferido requiere electricidad. En SGOHA, endpoints como `/api/courses` o `/api/schedules/latest` retornaban más campos de los necesarios, inflando el tráfico innecesariamente.
@@ -161,7 +161,7 @@ Las optimizaciones implementadas generaron beneficios concretos y medibles en tr
 *   **Huella de carbono:** El CO2 total por sesión pasó de 0.030439687 g a 0.025530414 g (**−16.1%**), y el CO2 promedio por solicitud de 0.000981925 g a 0.000773649 g (**−21.2%**), medidos con el modelo SWD de CO2.js sobre bytes reales transferidos.
 
 ### Escalabilidad Sostenible
-A mayor número de usuarios concurrentes, el impacto de cada optimización se multiplica. Una reducción del 90.3% en el payload de generación de horarios no es solo un ahorro puntual: con 1,000 generaciones diarias, evita transferir aproximadamente **35 MB de datos innecesarios** por día solo en ese endpoint. La caché HTTP para cursos, al eliminar consultas redundantes a MongoDB Atlas, reduce la presión sobre la base de datos en la nube, postergando la necesidad de escalar la infraestructura y el hardware asociado.
+*  A mayor número de usuarios concurrentes, el impacto de cada optimización se multiplica. Una reducción del 90.3% en el payload de generación de horarios no es solo un ahorro puntual: con 1,000 generaciones diarias, evita transferir aproximadamente **35 MB de datos innecesarios** por día solo en ese endpoint. La caché HTTP para cursos, al eliminar consultas redundantes a MongoDB Atlas, reduce la presión sobre la base de datos en la nube, postergando la necesidad de escalar la infraestructura y el hardware asociado.
 
 ---
 ## 9. Conclusión
