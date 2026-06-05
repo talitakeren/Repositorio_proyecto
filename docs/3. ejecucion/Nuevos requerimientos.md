@@ -1,8 +1,6 @@
-## 2. Cumplimiento de Requerimientos en la Rama `development`
+## Nuevos Requerimientos
 
-La rama **development** implementa y amplía los requerimientos definidos inicialmente, incorporando funcionalidades adicionales que fortalecen la gestión académica, la generación de horarios y la administración del sistema.
-
-| ID     | Requerimiento                              | Implementación en development                                                                                                                                                                  |
+| ID     | Requerimiento                              | Descripción                                                                                                                                                                  |
 | ------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | RF-01  | Registro de cursos                         | El sistema debe permitir registrar, editar, consultar y eliminar cursos, incluyendo la definición del tipo de aula requerida y el estado activo/inactivo de cada curso.                        |
 | RF-02  | Registro de docentes                       | El sistema debe permitir gestionar docentes, registrar su especialidad, los cursos que pueden dictar y su disponibilidad según las franjas horarias oficiales.                                 |
