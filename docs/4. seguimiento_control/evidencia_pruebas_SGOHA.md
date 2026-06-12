@@ -15,7 +15,11 @@
 - Uso de **mocks**, **stubs** y **spies** (`jest.fn()`, `jest.spyOn()`, `jest.unstable_mockModule()`).
 - Validación de excepciones: errores con status 401, 403, 404 y 409 (duplicado MongoDB `code: 11000`).
 - Casos límite: email con espacios y mayúsculas, usuario inactivo, ID inexistente, contraseña incorrecta.
-- Pruebas sobre componentes React (`Button`, `Input`, `Badge`, `EnrollmentStatusBadge`): renderizado verificado con `screen.getByRole` / `screen.getByText`, interacción via `userEvent.click`, estado `disabled`. El módulo `lucide-react` está mockeado para evitar errores de ESM en jsdom.
+- Pruebas sobre componentes React (`Button`, `Input`, `Badge`, `EnrollmentStatusBadge`):
+  - Renderizado correcto verificado con `screen.getByRole` y `screen.getByText`.
+  - Interacción mediante eventos: click con `userEvent.click`, verificación de `onClick` invocado con `jest.fn()`.
+  - Validación de estado `disabled` en `Button` e `Input`.
+  - Simulación de dependencias externas: módulo `lucide-react` mockeado en `tests/mocks/lucide-react.jsx` para evitar errores de ESM en jsdom.
 - Pruebas sobre utilitarios frontend: `authRedirect`, `settingsValidation`, `availabilityHelpers`, `teacherFilters`, `getInitials`, `pageTitles`, `studentLabels`.
 - MSW (`msw@2.14.6`) configurado con handlers para los endpoints de auth, cursos, horarios, enrollments, dashboard y settings.
 
@@ -144,11 +148,11 @@ npm run test:integration:frontend  # integración frontend
 npm run test:integration           # ambas
 ```
 
----
-
 **Evidencia:**
 
 - Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1K-rF5V3lPTqDEoyfW20NMpzKo0cW7E1P?usp=drive_link)
+
+---
 
 ## 3. Pruebas de Aceptación
 
@@ -188,10 +192,11 @@ npm run test:acceptance   # headless
 npm run cy:open           # modo interactivo
 ```
 
----
 **Evidencia:**
 
 - Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1ZeMN-lz-7ebrwm22oKoVPAiRlO4rT_IV?usp=drive_link)
+
+---
 
 ## 4. Pruebas End-to-End (E2E)
 
@@ -229,9 +234,11 @@ npm run test:e2e   # solo E2E
 npm run cy:run     # todas las pruebas Cypress juntas
 ```
 
----
+**Evidencia:**
 
 - Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/128ps2MYDoIYI3iVDaq6OQ-_ejTyel3k_?usp=drive_link)
+
+---
 
 ## 5. Análisis de Cobertura
 
@@ -259,7 +266,6 @@ docs/COVERAGE_ANALYSIS.md
 tests/reports/coverage/   (generado al ejecutar test:coverage)
 ```
 
-
 **Comandos:**
 
 ```bash
@@ -267,9 +273,11 @@ npm run test:coverage   # genera todos los reportes
 npm run coverage:open   # abre el reporte HTML consolidado
 ```
 
----
+**Evidencia:**
 
 - Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1SgoDtXgo9ujfrztzwbCC1YR9albBTaMA?usp=drive_link)
+
+---
 
 ## Ejecución completa
 
