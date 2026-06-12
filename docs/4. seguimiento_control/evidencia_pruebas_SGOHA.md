@@ -77,8 +77,9 @@ npm run test:unit:frontend  # unitarias frontend
 npm run test:unit           # ambas
 ```
 
-**Capturas:**
-![alt text](image.png)
+**Evidencia:**
+
+- Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1OxeisRdp0Tz6WX-ZHDO6BwmuznXRTUfk?usp=drive_link)
 
 ---
 
@@ -145,6 +146,10 @@ npm run test:integration           # ambas
 
 ---
 
+**Evidencia:**
+
+- Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1K-rF5V3lPTqDEoyfW20NMpzKo0cW7E1P?usp=drive_link)
+
 ## 3. Pruebas de Aceptación
 
 **Objetivo:** Validar los flujos funcionales completos del sistema desde la perspectiva del usuario, simulando interacción real sobre el navegador.
@@ -184,6 +189,9 @@ npm run cy:open           # modo interactivo
 ```
 
 ---
+**Evidencia:**
+
+- Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1ZeMN-lz-7ebrwm22oKoVPAiRlO4rT_IV?usp=drive_link)
 
 ## 4. Pruebas End-to-End (E2E)
 
@@ -223,6 +231,8 @@ npm run cy:run     # todas las pruebas Cypress juntas
 
 ---
 
+- Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/128ps2MYDoIYI3iVDaq6OQ-_ejTyel3k_?usp=drive_link)
+
 ## 5. Análisis de Cobertura
 
 **Objetivo:** Evaluar cuantitativamente la cobertura alcanzada, identificar módulos cubiertos y documentar exclusiones justificadas.
@@ -249,6 +259,7 @@ docs/COVERAGE_ANALYSIS.md
 tests/reports/coverage/   (generado al ejecutar test:coverage)
 ```
 
+
 **Comandos:**
 
 ```bash
@@ -257,6 +268,8 @@ npm run coverage:open   # abre el reporte HTML consolidado
 ```
 
 ---
+
+- Link de evidencia: [Ver evidencia](https://drive.google.com/drive/folders/1SgoDtXgo9ujfrztzwbCC1YR9albBTaMA?usp=drive_link)
 
 ## Ejecución completa
 
