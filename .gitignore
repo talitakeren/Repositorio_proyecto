@@ -1,0 +1,20 @@
+# Entorno
+.env
+.env.local
+*.log
+
+# Dependencias
+node_modules/
+
+# Tests QA (artefactos generados)
+tests/.cache/
+tests/reports/
+coverage/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
