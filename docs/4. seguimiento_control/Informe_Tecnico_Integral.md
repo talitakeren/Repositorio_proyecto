@@ -6,8 +6,7 @@
 
 SonarQube permite medir de forma integral la calidad de código (bugs, smells, duplicación, deuda técnica, seguridad estática y Quality Gate) sobre `frontend` y `backend`, usando cobertura LCOV como entrada.
 
-### Subapartados(concepto + propósito + logro)
-
+### Subapartados
 | Subapartado | Qué hace | Qué se hizo en SGOHA | Logro |
 | ---------- | -------- | -------------------- | ----- |
 | Configuración | Define alcance de análisis | `sonar-project.properties` validado | ✅ Fuentes/tests/cobertura correctamente mapeadas |
@@ -39,7 +38,7 @@ SonarQube permite medir de forma integral la calidad de código (bugs, smells, d
 | LCOV por suite | ✅ Generado |
 | `SONARQUBE_LOCAL_EXECUTION.md` | ✅ Registro de ejecución real y métricas API |
 
-### Verificación explícita de ejecución SonarQube (real)
+### Verificación explícita de ejecución SonarQube 
 
 | Verificación | Resultado real | Diagnóstico |
 | ------------ | -------------- | ----------- |
@@ -90,7 +89,7 @@ Resultado final del apartado: ✅ SonarQube funcional en local y listo para cont
 
 No se trata de listar números aislados, sino de explicar su **impacto técnico real en SGOHA**: estabilidad funcional, riesgo de regresión, seguridad operativa y mantenibilidad.
 
-### Subapartados (concepto + propósito + logro)
+### Subapartados
 
 | Subapartado | Qué evalúa | Resultado logrado |
 | ---------- | ---------- | ----------------- |
@@ -133,7 +132,7 @@ Se logró interpretar métricas con enfoque técnico y de negocio académico: ya
 
 Evaluar la postura de seguridad de SGOHA frente a riesgos OWASP (acceso, autenticación, misconfiguración, dependencias, excepciones y trazabilidad), combinando revisión de código y evidencia de ejecución.
 
-### Subapartados (concepto + propósito + logro)
+### Subapartados 
 
 | Subapartado | Qué hace | Logro en SGOHA |
 | ---------- | -------- | -------------- |
@@ -177,7 +176,7 @@ Se consolidó una base DevSecOps funcional: controles preventivos en backend, au
 
 Verificar que la interfaz cumpla criterios de accesibilidad con objetivo AA, tanto en pruebas automatizadas (axe/Lighthouse) como en revisión humana guiada.
 
-### Subapartados (concepto + propósito + logro)
+### Subapartados 
 
 | Subapartado | Qué hace | Logro en SGOHA |
 | ---------- | -------- | -------------- |
@@ -218,7 +217,7 @@ Se alcanzó una validación híbrida madura (automatización + protocolo manual)
 
 SUS mide usabilidad percibida con un instrumento estandarizado (10 preguntas, escala 1–5). En este proyecto se implementó el sistema completo de captura/cálculo, evitando simular usuarios reales.
 
-### Subapartados (concepto + propósito + logro)
+### Subapartados 
 
 | Subapartado | Qué hace | Logro en SGOHA |
 | ---------- | -------- | -------------- |
