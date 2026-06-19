@@ -23,7 +23,6 @@ export default function StudentForm({
   onSubmit,
   submitting = false,
 }) {
-  const isEdit = Boolean(student);
   const [form, setForm] = useState({
     code: "",
     fullName: "",

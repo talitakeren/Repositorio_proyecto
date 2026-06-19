@@ -6,9 +6,10 @@ import {
   changeMyPassword,
 } from "../controllers/auth.controller.js";
 import { protect } from "../middlewares/auth.middleware.js";
+import { loginRateLimiter } from "../middlewares/security.middleware.js";
 
 const router = Router();
-router.post("/login", login);
+router.post("/login", loginRateLimiter, login);
 router.get("/me", protect, me);
 router.put("/me", protect, updateMe);
 router.put("/me/password", protect, changeMyPassword);

@@ -1,0 +1,61 @@
+name: SonarQube / SonarCloud
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sonar:
+    name: Análisis Sonar
+    runs-on: ubuntu-latest
+    if: ${{ secrets.SONAR_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: |
+          npm ci
+          cd frontend && npm ci
+          cd ../backend && npm ci
+
+      - name: Pruebas y cobertura
+        run: npm run test:coverage
+
+      - name: SonarCloud Scan
+        if: ${{ secrets.SONAR_ORGANIZATION != '' }}
+        uses: SonarSource/sonarcloud-github-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+
+      - name: SonarQube self-hosted Scan
+        if: ${{ secrets.SONAR_HOST_URL != '' && secrets.SONAR_ORGANIZATION == '' }}
+        uses: SonarSource/sonarqube-scan-action@v4
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+  sonar-skipped:
+    name: Sonar — omitido (sin token)
+    runs-on: ubuntu-latest
+    if: ${{ secrets.SONAR_TOKEN == '' }}
+    steps:
+      - run: |
+          echo "::notice::SONAR_TOKEN no configurado. Configure los secretos en GitHub para activar el análisis."
+          echo "Ver docs/CI_CD_GITHUB_ACTIONS.md"

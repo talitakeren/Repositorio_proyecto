@@ -1,0 +1,28 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "startServerCommand": "cd frontend && npm run preview -- --port 5173 --host",
+      "startServerReadyPattern": "Local:",
+      "url": [
+        "http://localhost:5173/login",
+        "http://localhost:5173/dashboard",
+        "http://localhost:5173/student/enrollment",
+        "http://localhost:5173/schedules"
+      ],
+      "settings": {
+        "onlyCategories": ["accessibility"],
+        "locale": "es"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:accessibility": ["warn", { "minScore": 0.85 }]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": "./docs/reportes/accessibility/lighthouse"
+    }
+  }
+}

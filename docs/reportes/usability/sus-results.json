@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-17T22:55:32.142Z",
+  "source_csv": "docs/reportes/usability/sus-demo.csv",
+  "formula": {
+    "odd": "aporte = respuesta - 1",
+    "even": "aporte = 5 - respuesta",
+    "sus": "suma_aportes × 2.5"
+  },
+  "participants": [
+    {
+      "participant_id": "DEMO-01",
+      "role": "TEACHER",
+      "answers": {
+        "p1": 4,
+        "p2": 2,
+        "p3": 4,
+        "p4": 1,
+        "p5": 4,
+        "p6": 2,
+        "p7": 4,
+        "p8": 2,
+        "p9": 4,
+        "p10": 2
+      },
+      "sus_score": 77.5,
+      "interpretation": "Bueno",
+      "comments": "Ejemplo demostrativo formula SUS"
+    }
+  ],
+  "overall": {
+    "count": 1,
+    "average": 77.5,
+    "median": 77.5,
+    "min": 77.5,
+    "max": 77.5,
+    "interpretation": "Bueno"
+  },
+  "by_role": {
+    "TEACHER": {
+      "count": 1,
+      "average": 77.5,
+      "median": 77.5,
+      "min": 77.5,
+      "max": 77.5,
+      "participants": 1
+    }
+  }
+}

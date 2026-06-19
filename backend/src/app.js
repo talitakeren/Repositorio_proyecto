@@ -15,13 +15,19 @@ import dashboardRoutes from "./routes/dashboard.routes.js";
 import restrictionRoutes from "./routes/restriction.routes.js";
 import settingsRoutes from "./routes/settings.routes.js";
 
-import { co2Middleware } from "./middlewares/co2.middleware.js";
 import { notFound, errorHandler } from "./middlewares/error.middleware.js";
+import {
+  securityHeaders,
+  apiRateLimiter,
+} from "./middlewares/security.middleware.js";
 
 const app = express();
 const isProduction = process.env.NODE_ENV === "production";
 const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
 
+app.set("trust proxy", 1);
+app.use(securityHeaders);
+app.use(apiRateLimiter);
 app.use(
   cors(
     isProduction
@@ -29,9 +35,9 @@ app.use(
       : { origin: true }
   )
 );
-app.use(express.json());
-app.use(morgan("dev"));
-app.use(co2Middleware);   // ← acá, antes de cualquier ruta
+app.use(express.json({ limit: process.env.JSON_BODY_LIMIT || "1mb" }));
+app.use(morgan(isProduction ? "combined" : "dev"));
+
 app.get("/api/health", (_req, res) => {
   res.json({ success: true, message: "SGOHA API operativa" });
 });

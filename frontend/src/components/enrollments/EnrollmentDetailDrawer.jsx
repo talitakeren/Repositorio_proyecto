@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Gauge, BookOpen, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { Gauge, AlertTriangle, CheckCircle2 } from "lucide-react";
 import Drawer from "../ui/Drawer.jsx";
 import Badge from "../ui/Badge.jsx";
 import EnrollmentStatusBadge from "./EnrollmentStatusBadge.jsx";

@@ -6,20 +6,20 @@ export default function CourseList() {
   const [loading, setLoading] = useState(true);
   const [editingCourse, setEditingCourse] = useState(null);
 
-  useEffect(() => {
-    fetchCourses();
-  }, []);
-
-  const fetchCourses = () => {
+  function fetchCourses() {
     setLoading(true);
     fetch(apiUrl("/course"))
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setCourses(data);
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  };
+  }
+
+  useEffect(() => {
+    fetchCourses();
+  }, []);
 
   // ELIMINAR
   const handleDelete = async (id) => {

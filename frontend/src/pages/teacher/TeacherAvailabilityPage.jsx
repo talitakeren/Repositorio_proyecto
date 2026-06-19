@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   AlertTriangle,
   Save,
@@ -38,7 +38,7 @@ import {
 export default function TeacherAvailabilityPage() {
   const [teacher, setTeacher] = useState(null);
   const [availability, setAvailability] = useState([]);
-  const savedRef = useRef([]);
+  const [savedAvailability, setSavedAvailability] = useState([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [msg, setMsg] = useState(null);
@@ -50,7 +50,7 @@ export default function TeacherAvailabilityPage() {
       .then((data) => {
         setTeacher(data);
         const initial = data?.availability || [];
-        savedRef.current = initial;
+        setSavedAvailability(initial);
         setAvailability(initial);
       })
       .catch(() => setLinkError(true))
@@ -68,12 +68,12 @@ export default function TeacherAvailabilityPage() {
       )
     );
     const b = JSON.stringify(
-      [...savedRef.current].sort((x, y) =>
+      [...savedAvailability].sort((x, y) =>
         `${x.day}${x.startTime}`.localeCompare(`${y.day}${y.startTime}`)
       )
     );
     return a !== b;
-  }, [availability]);
+  }, [availability, savedAvailability]);
 
   function applyQuickAction(nextOrFn) {
     setMsg(null);
@@ -99,7 +99,7 @@ export default function TeacherAvailabilityPage() {
   }
 
   function cancelChanges() {
-    setAvailability([...savedRef.current]);
+    setAvailability([...savedAvailability]);
     setMsg(null);
   }
 
@@ -111,7 +111,7 @@ export default function TeacherAvailabilityPage() {
         await teacherPortalService.updateMyAvailability(availability);
       setTeacher(updated);
       const saved = updated?.availability || availability;
-      savedRef.current = saved;
+      setSavedAvailability(saved);
       setAvailability(saved);
       setMsg({
         type: "success",

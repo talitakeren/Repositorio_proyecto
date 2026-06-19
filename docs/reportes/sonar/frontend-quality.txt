@@ -1,0 +1,14 @@
+
+> sgoha-frontend@2.0.0 lint
+> eslint .
+
+
+/Users/stevenhuaccho/Desktop/Proyecto2026/Repositorio_proyecto/frontend/src/pages/TeacherForm.jsx
+  35:6  warning  React Hook useEffect has a missing dependency: 'isEdit'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/stevenhuaccho/Desktop/Proyecto2026/Repositorio_proyecto/frontend/src/pages/student/StudentEnrollmentPage.jsx
+  89:9  warning  The 'courses' logical expression could make the dependencies of useMemo Hook (at line 95) change on every render. To fix this, wrap the initialization of 'courses' in its own useMemo() Hook   react-hooks/exhaustive-deps
+  89:9  warning  The 'courses' logical expression could make the dependencies of useMemo Hook (at line 110) change on every render. To fix this, wrap the initialization of 'courses' in its own useMemo() Hook  react-hooks/exhaustive-deps
+
+✖ 3 problems (0 errors, 3 warnings)
+

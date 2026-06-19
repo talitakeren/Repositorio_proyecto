@@ -4,9 +4,6 @@ import {
   Search,
   Plus,
   Eye,
-  CheckCircle2,
-  AlertTriangle,
-  Ban,
 } from "lucide-react";
 import PageHeader from "../../components/ui/PageHeader.jsx";
 import Card from "../../components/ui/Card.jsx";
@@ -110,33 +107,6 @@ export default function EnrollmentsPage() {
       return true;
     });
   }, [enrollments, creditsFilter, validationFilter]);
-
-  async function refreshDetail(id) {
-    const item = await enrollmentService.getEnrollmentById(id);
-    setDetail(item);
-    setEnrollments((prev) =>
-      prev.map((e) => (String(e._id) === String(item._id) ? item : e))
-    );
-  }
-
-  async function runAction(action, enrollmentId, payload) {
-    setSaving(true);
-    try {
-      if (action === "validate") await enrollmentService.validateEnrollment(enrollmentId);
-      if (action === "confirm") await enrollmentService.confirmEnrollment(enrollmentId);
-      if (action === "reject") await enrollmentService.rejectEnrollment(enrollmentId, payload || "Rechazada por administración");
-      if (action === "observe") await enrollmentService.observeEnrollment(enrollmentId, payload || "Matrícula observada por administración");
-      await load();
-      if (detail && String(detail._id) === String(enrollmentId)) {
-        await refreshDetail(enrollmentId);
-      }
-      showToast("Matrícula actualizada correctamente.");
-    } catch (e) {
-      showToast(e?.response?.data?.message || "No se pudo completar la acción.", "error");
-    } finally {
-      setSaving(false);
-    }
-  }
 
   async function createEnrollment() {
     if (!newStudentId || newCourseIds.length === 0) {

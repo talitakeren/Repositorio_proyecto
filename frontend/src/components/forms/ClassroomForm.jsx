@@ -19,7 +19,6 @@ export default function ClassroomForm({
   onSubmit,
   submitting = false,
 }) {
-  const isEdit = Boolean(classroom);
   const [form, setForm] = useState({
     code: "",
     type: "STANDARD",

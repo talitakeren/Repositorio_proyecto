@@ -1,9 +1,23 @@
-node_modules
+# Entorno
 .env
 .env.local
-.env.*.local
-config.env
-dist
-.DS_Store
-coverage
 *.log
+
+# Dependencias
+node_modules/
+
+# Tests QA (artefactos generados)
+tests/.cache/
+tests/reports/
+coverage/
+docs/reportes/security/*.json
+docs/reportes/security/*.txt
+docs/reportes/accessibility/lighthouse/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

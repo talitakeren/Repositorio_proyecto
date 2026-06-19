@@ -26,7 +26,6 @@ import {
   MIN_CREDITS,
   MAX_CREDITS,
   ENROLLMENT_STATUS_LABEL,
-  ENROLLMENT_STATUS_BADGE,
 } from "../../utils/enrollmentConstants.js";
 import {
   CLASSROOM_TYPE_LABELS,

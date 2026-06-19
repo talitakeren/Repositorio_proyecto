@@ -5,7 +5,12 @@ export const notFound = (req, res) => {
 };
 
 export const errorHandler = (err, req, res, _next) => {
-  console.error(err);
+  const isProduction = process.env.NODE_ENV === "production";
+  if (!isProduction) {
+    console.error(err);
+  } else {
+    console.error(err.message || "Error interno");
+  }
 
   if (err.name === "ValidationError") {
     const messages = Object.values(err.errors).map((e) => e.message);

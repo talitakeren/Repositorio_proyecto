@@ -116,7 +116,7 @@ export default function ValidationResults({
   );
 }
 
-function ResultRow({ icon: Icon, status, title, description }) {
+function ResultRow({ status, title, description }) {
   const palette =
     status === "ok"
       ? {

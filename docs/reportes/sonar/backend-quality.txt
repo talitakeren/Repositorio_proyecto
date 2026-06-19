@@ -1,0 +1,4 @@
+
+> sgoha-backend@2.0.0 lint
+> node --check src/app.js && node --check src/server.js
+

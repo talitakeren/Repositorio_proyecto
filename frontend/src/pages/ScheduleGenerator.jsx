@@ -27,7 +27,7 @@ export default function ScheduleGenerator() {
         preferencesMet: data.preferencesMet ?? 0,
         objectiveScore: data.objectiveScore ?? 0,
       });
-    } catch (err) {
+    } catch {
       setError("No se pudo conectar al servidor. Verifica que el backend esté corriendo.");
     } finally {
       setLoading(false);

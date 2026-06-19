@@ -8,25 +8,20 @@
     "start": "node src/server.js",
     "seed": "node src/seed/seedUsers.js",
     "seed:full": "node src/seed/seed.js",
-    "test": "node --experimental-vm-modules node_modules/jest-cli/bin/jest.js --coverage"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {}
+    "lint": "node --check src/app.js && node --check src/server.js"
   },
   "dependencies": {
-    "@tgwf/co2": "^0.18.0",
     "bcryptjs": "^3.0.2",
-    "compression": "^1.8.1",
     "cors": "^2.8.6",
     "dotenv": "^16.6.1",
     "express": "^5.2.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.1",
     "morgan": "^1.10.1"
   },
   "devDependencies": {
-    "jest": "^30.3.0",
     "nodemon": "^3.1.10"
   }
 }

@@ -2,7 +2,6 @@ import "./config/env.js";
 import connectDB from "./config/db.js";
 import app from "./app.js";
 import { timeslotService } from "./services/timeslot.service.js";
-import { printCO2Dashboard } from "./middlewares/co2.middleware.js";
 
 const PORT = process.env.PORT || 5001;
 
@@ -23,6 +22,3 @@ try {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
-
-// ... al final del archivo:
-process.on("SIGINT", () => { printCO2Dashboard(); process.exit(0); });

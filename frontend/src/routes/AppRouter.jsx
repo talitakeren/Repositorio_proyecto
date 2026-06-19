@@ -11,7 +11,6 @@ import LoginPage from "../pages/auth/LoginPage.jsx";
 
 // Admin
 import DashboardPage from "../pages/dashboard/DashboardPage.jsx";
-import AdminPlaceholderPage from "../pages/admin/AdminPlaceholderPage.jsx";
 import UsersPage from "../pages/admin/UsersPage.jsx";
 import TimeSlotsPage from "../pages/timeslots/TimeSlotsPage.jsx";
 import ClassroomsPage from "../pages/classrooms/ClassroomsPage.jsx";

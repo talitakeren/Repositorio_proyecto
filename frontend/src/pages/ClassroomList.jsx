@@ -105,6 +105,22 @@ export default function ClassroomList() {
         <p style={{ color: "#94a3b8" }}>Explora y gestiona los espacios físicos disponibles</p>
       </div>
 
+      {(error || success) && (
+        <div
+          role="alert"
+          style={{
+            marginBottom: "16px",
+            padding: "12px 16px",
+            borderRadius: "8px",
+            background: error ? "rgba(239, 68, 68, 0.15)" : "rgba(52, 211, 153, 0.15)",
+            color: error ? "#fca5a5" : "#6ee7b7",
+            border: `1px solid ${error ? "rgba(239, 68, 68, 0.3)" : "rgba(52, 211, 153, 0.3)"}`,
+          }}
+        >
+          {error || success}
+        </div>
+      )}
+
       {/* --- SECCIÓN 1: FORMULARIO (ADMIN) --- */}
       <div style={{ 
         background: "rgba(99, 102, 241, 0.05)", padding: "20px", borderRadius: "12px", 
