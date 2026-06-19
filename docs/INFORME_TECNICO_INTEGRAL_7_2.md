@@ -75,7 +75,7 @@ SonarQube permite medir de forma integral la calidad de código (bugs, smells, d
 
 ### Evidencias
 
-Ver detalle completo en [`Capturas`](./COVERAGE_ANALYSIS.md).
+Ver detalle completo en [`Capturas`](https://drive.google.com/drive/folders/1h42nJQdSMy05B2hml9k9lvw32Po6Qlz4?usp=sharing).
 
 ### Conclusión
 
@@ -119,9 +119,7 @@ No se trata de listar números aislados, sino de explicar su **impacto técnico 
 - Un backend con dependencias saneadas disminuye exposición a fallos de disponibilidad.
 - El Quality Gate en `OK` confirma capacidad de control, pero los 784 issues y ratings D/E muestran deuda de calidad y seguridad que debe priorizarse.
 
-### Evidencias
 
-Ver detalle completo en [`Capturas`](./COVERAGE_ANALYSIS.md).
 
 ### Conclusión
 
@@ -165,7 +163,7 @@ Evaluar la postura de seguridad de SGOHA frente a riesgos OWASP (acceso, autenti
 
 ### Evidencias
 
-Ver detalle completo en [`Capturas`](./COVERAGE_ANALYSIS.md).
+Ver detalle completo en [`Capturas`](https://drive.google.com/drive/folders/1g8y7Yk16FmZSOEClY2rcmdS4pQEzz-n3?usp=sharing).
 
 ### Conclusión
 
@@ -206,7 +204,7 @@ Verificar que la interfaz cumpla criterios de accesibilidad con objetivo AA, tan
 
 ### Evidencias
 
-Ver detalle completo en [`Capturas`](./COVERAGE_ANALYSIS.md).
+Ver detalle completo en [`Capturas`](https://drive.google.com/drive/folders/1CvyKqr99Yn4vb-_F_wk5ieIYKXXM6A2u?usp=sharing).
 
 ### Conclusión
 
@@ -247,7 +245,7 @@ SUS mide usabilidad percibida con un instrumento estandarizado (10 preguntas, es
 
 ### Evidencias
 
-Ver detalle completo en [`Capturas`](./COVERAGE_ANALYSIS.md).
+Ver detalle completo en [`Capturas`](https://drive.google.com/drive/folders/1BiscrxArdfP5DQMee88bZb71RfhMssa6?usp=sharing).
 
 ### Conclusión
 
