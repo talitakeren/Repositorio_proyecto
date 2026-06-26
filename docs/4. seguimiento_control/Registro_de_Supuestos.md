@@ -1,10 +1,6 @@
 # Registro de Supuestos (Assumption Log) — Cierre
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
-**Versión:** 2.0.0 (actualización de cierre)  
-**Fecha:** Junio 2026  
-**Proyecto:** SGOHA — Taller de Proyectos 2
-
 ---
 
 ## Propósito
@@ -57,7 +53,3 @@ Los siguientes supuestos no fueron documentados formalmente al inicio pero surgi
 2. Documentar explícitamente los supuestos de integración entre módulos como contratos.
 3. Revisar y validar los supuestos en cada retrospectiva de sprint, no solo al cierre.
 4. Establecer mecanismos de alerta cuando un supuesto muestre señales de no cumplirse (ej. latencia alta en servicios cloud, curva de aprendizaje mayor a la prevista).
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
