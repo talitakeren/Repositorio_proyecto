@@ -1,15 +1,10 @@
 # Revisión del Acta de Constitución del Proyecto — Cierre
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
-
-**Versión:** 1.0.0  
-**Fecha de revisión:** Junio 2026  
-**Propósito:** Verificar el cumplimiento de objetivos, criterios de éxito y alineación con resultados finales del proyecto
-
 ---
 
 ## 1. Revisión del Propósito y Justificación
 
-**Propósito declarado en el Charter:**  
+**Propósito:**  
 Automatizar el proceso de planificación de horarios académicos en un contexto de currículo flexible, reduciendo problemas de solapamiento, incumplimiento de prerrequisitos y subutilización de infraestructura.
 
 **Estado al cierre:**
@@ -24,7 +19,7 @@ Automatizar el proceso de planificación de horarios académicos en un contexto 
 
 ## 2. Revisión del Objetivo General
 
-**Declarado en el Charter:**  
+**Objetivo:**  
 Desarrollar un PMV de una aplicación web basada en el stack MERN, capaz de generar horarios académicos válidos considerando prerrequisitos académicos, disponibilidad de docentes y aulas, y límite de créditos. Desarrollo en 12 semanas bajo Scrum.
 
 **Evaluación:**
@@ -117,7 +112,3 @@ Desarrollar un PMV de una aplicación web basada en el stack MERN, capaz de gene
 El proyecto SGOHA alcanzó el 85% de sus objetivos declarados en el Acta de Constitución. Las principales desviaciones fueron de cronograma (no de alcance funcional), derivadas de la complejidad técnica inherente al problema de timetabling. El PMV entregado es funcional, documentado y está en condiciones de recibir iteraciones futuras.
 
 La única exclusión no planificada fue la exportación PDF/Excel (HU-09), cuya postergación fue una decisión técnica justificada para garantizar la estabilidad del núcleo del sistema.
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
