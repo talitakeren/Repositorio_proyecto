@@ -1,10 +1,5 @@
 # Declaración de Trabajo — Validación de Cierre (Statement of Work)
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
-
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Propósito:** Verificar que el trabajo comprometido esté completo antes del cierre formal del proyecto
-
 ---
 
 ## 1. Descripción del Alcance Comprometido
@@ -111,7 +106,3 @@ El proyecto SGOHA se comprometió a desarrollar un Producto Mínimo Viable (PMV)
 El equipo del proyecto SGOHA declara que el trabajo comprometido en el alcance del PMV ha sido completado de acuerdo con los criterios de aceptación definidos en el Project Charter, con la única excepción de la exportación PDF/Excel (HU-09), cuya postergación fue una decisión técnica documentada y aceptada por el equipo.
 
 El repositorio está en condiciones de recibir iteraciones futuras, el sistema es operativo en el entorno de despliegue, y la documentación está completa y versionada.
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
