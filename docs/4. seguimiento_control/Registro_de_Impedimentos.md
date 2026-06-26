@@ -1,10 +1,6 @@
 # Registro de Impedimentos (Impediment Log)
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Proyecto:** SGOHA — Taller de Proyectos 2
-
 ---
 
 ## Definición
@@ -50,7 +46,3 @@ Un impedimento es un obstáculo externo o interno al equipo que frena el progres
 ## Lección principal
 
 La mayoría de los impedimentos (5 de 7) tuvieron origen en la falta de definición previa de contratos técnicos y la ausencia de spikes formales. La resolución fue siempre interna al equipo, sin necesidad de escalamiento externo.
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
