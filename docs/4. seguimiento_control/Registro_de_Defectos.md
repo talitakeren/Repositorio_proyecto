@@ -1,10 +1,6 @@
 # Registro de Defectos (Defect Log)
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Proyecto:** SGOHA — Taller de Proyectos 2
-
 ---
 
 ## Escala de Severidad
