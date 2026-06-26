@@ -1,10 +1,5 @@
 # Documentación de Capacitación
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
-
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Dirigido a:** Coordinadores académicos (Administradores), Docentes y Estudiantes (Visualizadores), y equipo de operaciones que heredará el sistema
-
 ---
 
 ## 1. Descripción del Sistema
@@ -239,7 +234,3 @@ docker compose -f docker-compose.sonar.yml up -d
 
 Para soporte técnico sobre el sistema, contactar al equipo de desarrollo a través del repositorio en GitHub:  
 https://github.com/talitakeren/Repositorio_proyecto/issues
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
