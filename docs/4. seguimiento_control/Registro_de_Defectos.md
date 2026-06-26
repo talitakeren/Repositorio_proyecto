@@ -42,16 +42,3 @@
 | 🟡 Media | 4 | 2 | 2 |
 | **Total** | **8** | **5 (62,5%)** | **3 (37,5%)** |
 
----
-
-## Defectos pendientes para versión 2.0
-
-| ID | Descripción | Prioridad |
-|----|-------------|-----------|
-| DEF-07 (parcial) | 2 bugs de confiabilidad reportados por SonarQube | Alta |
-| DEF-08 (parcial) | 3 vulnerabilidades de seguridad reportadas por SonarQube | Alta |
-| — | Vulnerabilidades en dependencias frontend (devDependencies) | Media |
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
