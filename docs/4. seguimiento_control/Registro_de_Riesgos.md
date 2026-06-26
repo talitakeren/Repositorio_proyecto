@@ -1,10 +1,6 @@
 # Registro de Riesgos — Cierre
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
-**Versión:** 2.0.0 (actualización de cierre)  
-**Fecha:** Junio 2026  
-**Proyecto:** SGOHA — Taller de Proyectos 2  
-
 ---
 
 ## 1. Escala de Evaluación
@@ -57,7 +53,3 @@
 - **Riesgos materializados sin mitigación completa:** 1 (exportación PDF/Excel).
 - **Riesgos que no ocurrieron:** 1 (cambios críticos de requerimientos).
 - **Oportunidades aprovechadas:** 6 de 8 (75%).
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
