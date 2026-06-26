@@ -1,10 +1,6 @@
 # Registro de Incidentes (Issue Log)
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Proyecto:** SGOHA — Taller de Proyectos 2
-
 ---
 
 ## Escala de Prioridad y Estado
@@ -40,6 +36,3 @@
 | En progreso | 1 |
 | **Total** | **8** |
 
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
