@@ -1,4 +1,4 @@
-# Registro de Riesgos — Cierre
+# Registro de Riesgos
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
 ---
