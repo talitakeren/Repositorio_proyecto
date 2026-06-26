@@ -1,11 +1,5 @@
 # Informe Final del Proyecto
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
-
-**Versión:** 1.0.0  
-**Fecha de cierre:** Junio 2026  
-**Patrocinador:** Docente del curso — Taller de Proyectos 2  
-**Equipo:** Contreras Infanzón Alexandra Mirella · Espinoza Zarate Juan Carlos · Huaman Raymundo Yenifer Nicole · Olivera Paredes Talita Keren · Vega Carhuallanqui Tatiana
-
 ---
 
 ## 1. Resumen Ejecutivo
@@ -82,8 +76,6 @@ El resultado final es un sistema operativo que resuelve el problema de planifica
 | Sprint 1 | Semanas 4–7 | Semanas 4–8 | ~90 pts | ~72 pts (80 %) |
 | Sprint 2 | Semanas 8–12 | Semanas 9–12 | — | ✅ Motor CSP + documentación |
 
-**Observación:** El burndown chart evidenció actividad concentrada en el tramo final del sprint (27 abr – 7 may), con 17 días sin avance visible registrado. La extensión fue de aproximadamente 8 días respecto al Planned End. El factor determinante fue la alta complejidad inherente del problema de timetabling (NP-hard) y la curva de aprendizaje del algoritmo CSP/backtracking sin experiencia previa del equipo.
-
 ---
 
 ## 6. Desempeño de Costos
@@ -147,7 +139,3 @@ Las principales brechas identificadas para versiones futuras son:
 3. Implementar exportación PDF/Excel (HU-09).
 4. Refinar las restricciones blandas (preferencias de docentes) para mejorar la calidad de los horarios generados.
 5. Planificar sprints futuros con scope de ~70 puntos y descomposición más granular de historias complejas.
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
