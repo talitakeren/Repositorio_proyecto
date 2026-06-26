@@ -1,10 +1,5 @@
 # Informe Final de Lecciones Aprendidas
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
-
-**Versión:** 1.0.0  
-**Fecha:** Junio 2026  
-**Compilado por:** Equipo SGOHA — Taller de Proyectos 2  
-
 ---
 
 ## 1. Propósito
@@ -89,7 +84,3 @@ Este documento consolida las lecciones aprendidas y retrospectivas realizadas a 
 3. Limitar el scope de cada sprint al 80% de la velocidad real conocida para absorber imprevistos.
 4. Documentar contratos de integración entre módulos antes de iniciar la implementación.
 5. Formalizar retrospectivas por sprint con actas en el repositorio.
-
----
-
-*Documento generado en la fase de cierre del proyecto — Taller de Proyectos 2, Ingeniería de Sistemas e Informática, Universidad Continental.*
