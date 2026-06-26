@@ -1,4 +1,4 @@
-# Registro de Supuestos (Assumption Log) — Cierre
+# Registro de Supuestos (Assumption Log)
 ## Sistema de Generación Óptima de Horarios Académicos (SGOHA)
 
 ---
